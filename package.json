@@ -6,7 +6,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "cross-env .env.development gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
@@ -15,11 +15,14 @@
   },
   "dependencies": {
     "gatsby": "^3.2.1",
+    "gatsby-source-filesystem": "^3.3.0",
+    "gatsby-transformer-remark": "^4.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
+    "cross-env": "^7.0.3",
     "eslint-plugin-prettier": "^3.3.1",
     "gatsby-plugin-postcss": "^4.3.0",
     "postcss": "^8.2.10",

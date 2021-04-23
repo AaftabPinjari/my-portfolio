@@ -6,5 +6,19 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: ['gatsby-plugin-postcss'],
+  siteMetadata: {
+    title: "Aaftab Pinjari!",
+    author: "Aaftab"
+  },
+  plugins: [
+    'gatsby-plugin-postcss',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`
+      }
+    },
+    'gatsby-transformer-remark'
+  ],
 }
