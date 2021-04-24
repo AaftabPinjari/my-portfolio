@@ -36,8 +36,8 @@ const ContactPage = () => {
                                 <button className="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button>
                             </div>
                             <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-                                <a className="text-indigo-500">example@email.com</a>
-                                <p className="leading-normal my-5">49 Smith St.
+                                <a className="text-indigo-500">pinjari.aaftab1@gmail.com</a>
+                                <p className="leading-normal my-5">Burhanpur, India
                             </p>
                             </div>
                         </div>
