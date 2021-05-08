@@ -7,10 +7,17 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: "Aaftab Pinjari!",
-    author: "Aaftab"
+    title: "Gatsby Portfolio",
+    description: "My Portfolio built using Gatsby with MDX blog Integration and Lightning fast image loading",
+    url: "https://aaftabpinjari.gatsbyjs.io",
+    image: "/src/pages/aaftab.jpg",
+    twitterUsername: "@AaftabPinjari4",
+    keywords: "portfolio gatsby site fast speed blog",
+    author: "Aaftab",
+
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-postcss',
     {
       resolve: 'gatsby-source-filesystem',

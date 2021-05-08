@@ -1,9 +1,8 @@
 ---
 title: "Front End Development"
 date: "22-04-2021"
-featurdImage: twitter_profile_image.png
 category: "Web Development"
-
+desc: "all about front end Developement"
 ---
 ![front End](./twitter_profile_image.png)
 
@@ -16,4 +15,4 @@ category: "Web Development"
 4. Bootstrap
 5. Tailwind
 6. Reactjs
-7. sssGatsby
+7. Gatsby

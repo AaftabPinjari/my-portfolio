@@ -1,10 +1,11 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import Layout from '../components/layout';
-
+import { Seo } from '../components/Seo'
 const AboutPage = () => {
   return (
     <Layout>
+      <Seo title="About" />
       <section className="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
           <h2 className="sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2 md:w-2/5">About Me</h2>

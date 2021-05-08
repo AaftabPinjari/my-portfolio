@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 import { graphql } from 'gatsby'
+import { Seo } from '../components/Seo'
 
 export const query = graphql`
 query ($slug: String!) {
@@ -8,13 +9,7 @@ query ($slug: String!) {
       frontmatter {
         title
         date
-        featuredImage{
-            childImageSharp{
-                fluid{
-                    ...GatsbyImageSharpFluid
-                }
-            }
-        }
+        desc
       }
       html
     }
@@ -28,8 +23,12 @@ const BlogPost = (props) => {
 
         <Layout>
 
-
+            <Seo
+                title={props.data.markdownRemark.frontmatter.title}
+                description={props.data.markdownRemark.frontmatter.desc}
+            />
             <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+
                 <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
                     {props.data.markdownRemark.frontmatter.title}
                 </h1>

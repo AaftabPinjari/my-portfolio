@@ -1,8 +1,10 @@
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import React from 'react'
 import Layout from '../components/layout'
+import { Seo } from '../components/Seo'
 
 const BlogPage = () => {
+
     const data = useStaticQuery(graphql`
         query {
             allMarkdownRemark {
@@ -12,6 +14,7 @@ const BlogPage = () => {
                       title
                       date
                       category
+                      desc
                     }
                     fields {
                         slug
@@ -23,7 +26,13 @@ const BlogPage = () => {
     `)
 
     return (
+
+
         <Layout>
+            <Seo
+            // title={data.allMarkdownRemark.edges.node.frontmatter.title}
+            // description={data.allMarkdownRemark.edges.node.frontmatter.desc}
+            />
             <section className="text-gray-600 body-font overflow-hidden">
                 <div className="container px-5 py-24 mx-auto">{data.allMarkdownRemark.edges.map((edge) => {
                     return (

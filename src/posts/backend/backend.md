@@ -1,8 +1,8 @@
 ---
 title: "Back End Development"
 date: 22-04-2021
-featuredImage: facebook_cover_photo_2.png
 category: "Web Development"
+desc: "all about backEnd Developement"
 ---
 ![backend](./facebook_cover_photo_2.png)
 

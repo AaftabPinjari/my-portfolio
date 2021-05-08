@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from '../components/layout'
+import { Seo } from '../components/Seo'
 
 
 
@@ -12,6 +13,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
+      <Seo title="Aaftab Pinjari" />
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
